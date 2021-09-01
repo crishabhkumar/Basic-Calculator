@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="calc_design.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <h2>By:Rishabh Kumar</h2>
+</body>
+
+<form name="frm1" class="Calci" action="Calculator.html" method="POST">
+    <input type="text" name="answer" id="display">
+    <br>
+    </br>
+    <input type="button" class="btnDesign0" value="C" onclick="frm1.answer.value =' '">
+    <input type="button" class="btnDesign0" value="Del" onclick="frm1.answer.value =frm1.answer.value.substring(0,frm1.answer.value.length*1-1)">
+    <input type="button" class="optDesign" value="/" onclick="frm1.answer.value+='/'">
+    <br>
+    </br>
+
+    <input type="button" class="btnDesign" value="7" onclick="frm1.answer.value+='7'">
+    <input type="button" class="btnDesign" value="8" onclick="frm1.answer.value+='8'">
+    <input type="button" class="btnDesign" value="9" onclick="frm1.answer.value+='9'">
+    <input type="button" class="optDesign" value="*" onclick="frm1.answer.value+='*'">
+    <br>
+    </br>
+
+    <input type="button" class="btnDesign" value="4" onclick="frm1.answer.value+='4'">
+    <input type="button" class="btnDesign" value="5" onclick="frm1.answer.value+='5'">
+    <input type="button" class="btnDesign" value="6" onclick="frm1.answer.value+='6'">
+    <input type="button" class="optDesign" value="-" onclick="frm1.answer.value+='-'">
+    <br>
+    </br>
+
+    <input type="button" class="btnDesign" value="1" onclick="frm1.answer.value+='1'">
+    <input type="button" class="btnDesign" value="2" onclick="frm1.answer.value+='2'">
+    <input type="button" class="btnDesign" value="3" onclick="frm1.answer.value+='3'">
+    <input type="button" class="optDesign" value="+" onclick="frm1.answer.value+='+'">
+    <br>
+    </br>
+
+    <input type="button" id="zero" value="0" inclick="frm1.answer.value+='0'">
+    <input type="button" class="btnDesign" value="." onclick="frm1.answer.value+='.'">
+    <input type="button" class="optDesign" value="=" onclick="frm1.answer.value = eval(frm1.answer.value)">
+
+</form>
+
+</html>
